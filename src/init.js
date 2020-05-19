@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   $('.fredArmy').on('click', function(event) {
-    $('.dancer').removeClass('kimdang johann nikita').addClass('fred');
+    $('.dancer').removeClass('kimdang johann nikita moonwalkImg').addClass('fred');
     $(this).addClass('hide');
     $('.unFred').removeClass('hide');
   });

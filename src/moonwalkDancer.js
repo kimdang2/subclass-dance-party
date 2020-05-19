@@ -1,7 +1,7 @@
 var MakeMoonwalkDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node.addClass('kimdang');
+  this.$node.addClass('moonwalkImg');
 };
 
 MakeMoonwalkDancer.prototype = Object.create(MakeDancer.prototype);
