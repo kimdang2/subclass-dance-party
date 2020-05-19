@@ -15,26 +15,29 @@ body, a:link, a:visited, a:active{
 }
 
 .title, .addDancerButton{
-  padding:5px 12px;
+  padding:5px 10px;
   float:right;
 }
 .topbar{
   height:32px;
-  background-color: #e2d42c38;
+  margin-top: 10px;
+  background-color: #e4dfdf36;
 }
 .title{
-  background-color: #777;
+  background-color: #e4dfdf36;
+  font-size: 25px;
+  background: black;
+  animation : colorChange 1s infinite;
 }
 
 /* styles on buttons */
 .colorButton {
   background: black;
   color : white !important;
-  padding: 5px;
-  margin : 0 5px;
-  border-radius: 10px;
+  padding:5px 10px;
+  margin : 5px;
+  border-radius: 8px;
   animation : colorChange 1s infinite;
-  float:right;
 }
 
 /* setting alignment on dancers */
