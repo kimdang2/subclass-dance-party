@@ -44,9 +44,19 @@ body, a:link, a:visited, a:active{
 }
 
 .kimdang{
-  width : 70px;
+  /* width : 70px; */
+  width : 80px;
+  height : 110px;
+  background-image: url('images/mini_zoro.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .johann{
-  width : 70px;
+  /* width : 70px; */
+  width : 80px;
+  height : 110px;
+  background-image: url('images/cool_picka.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

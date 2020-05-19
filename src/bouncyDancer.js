@@ -5,7 +5,8 @@ var MakeBouncyDancer = function(top, left, timeBetweenSteps) {
   // this.$node = $('<span class="dancer bouncy"></span>'); //?
   // this.setPosition(top, left);
 
-  this.$node.append('<img class="kimdang" src ="images/mini_zoro.png">');
+  // this.$node.append('<img class="kimdang" src ="images/mini_zoro.png">');
+  this.$node.addClass('kimdang');
 };
 
 MakeBouncyDancer.prototype = Object.create(MakeDancer.prototype);

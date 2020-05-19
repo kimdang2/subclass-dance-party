@@ -4,7 +4,8 @@ var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // this.setPosition(top, left);
 
   //this.$node.append("<img src='images/zoro.png'/>");"
-  this.$node.append('<img class="johann" src ="images/cool_picka.png">');
+  // this.$node.append('<img class="johann" src ="images/cool_picka.png">');
+  this.$node.addClass('johann');
 };
 
 MakeBlinkyDancer.prototype = Object.create(MakeDancer.prototype);
