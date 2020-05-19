@@ -44,6 +44,5 @@ $(document).ready(function() {
     $('.lineUpButton').removeClass('hide');
   });
 
-
 });
 
