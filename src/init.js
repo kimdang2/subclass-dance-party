@@ -34,7 +34,14 @@ $(document).ready(function() {
 
   $('.fredArmy').on('click', function(event) {
     $('.dancer').removeClass('kimdang johann nikita').addClass('fred');
+    $(this).addClass('hide');
+    $('.unFred').removeClass('hide');
+  });
 
+  $('.unFred').on('click', function(event) {
+    $('.dancer').removeClass('fred');
+    $(this).addClass('hide');
+    $('.fredArmy').removeClass('hide');
   });
 });
 
