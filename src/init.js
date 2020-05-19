@@ -26,6 +26,9 @@ $(document).ready(function() {
     //   console.log(window.dancers[i]);
     // }
     $('.dancer').addClass('lineUp');
+    // hiding lineUpButton
+    $(this).addClass('hide');
+    // showing randomizeButton
     $('.randomizeButton').removeClass('hide');
   });
 
@@ -35,6 +38,10 @@ $(document).ready(function() {
     //   console.log(window.dancers[i]);
     // }
     $('.dancer').removeClass('lineUp');
+    // hiding randomizedButton
+    $(this).addClass('hide');
+    // showing lineUpButton
+    $('.lineUpButton').removeClass('hide');
   });
 
 

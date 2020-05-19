@@ -1,7 +1,7 @@
 var MakeSpinDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node.addClass('spindance');
+  this.$node.addClass('nikita');
 };
 
 MakeSpinDancer.prototype = Object.create(MakeDancer.prototype);
@@ -13,5 +13,5 @@ MakeSpinDancer.prototype.step = function() {
   // set oldstep the oldversion of step
   oldStep();
 
-  //this.$node.addClass('moonwalk');
+  this.$node.addClass('spindance');
 };

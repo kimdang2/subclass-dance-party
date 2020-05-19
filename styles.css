@@ -1,3 +1,4 @@
+/* general styles */
 body, html{
   height:100%;
 }
@@ -20,34 +21,64 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+/* styles on buttons */
+.alignButton {
+  background: black;
+  color : white !important;
+  padding: 5px;
+  border-radius: 10px;
+  animation : colorChange 1s infinite;
+}
+
+/* setting alignment on dancers */
+.lineUp{
+  top : 50% !important;
+}
+.hide{
+  display : none;
+}
+
+/* images for dancers */
+.kimdang{
+  width : 150px;
+  height : 150px;
+  background-image: url('images/excited_zoro.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.johann{
+  width : 150px;
+  height : 150px;
+  background-image: url('images/angry_picka.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nikita{
+  width : 150px;
+  height : 150px;
+  background-image: url('images/spin_dancer.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* style on dancers */
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 .bouncy{
-  /* color: pink; */
-  border:10px solid yellow;
-  border-radius:10px;
   position:absolute;
   animation: bounce 1s infinite;
 }
+.spindance {
+	animation: spin 10s linear infinite;
+}
 
+/* keyframes for animation on dancers */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
   40% {transform: translateY(-30px);}
   60% {transform: translateY(-15px);}
 }
-
-.lineUp{
-  top : 50% !important;
-}
-
-
-.spindance {
-	animation: spin 10s linear infinite;
-}
-
 @keyframes spin {
 	0% {
 		transform: rotateZ(0);
@@ -56,25 +87,14 @@ body, a:link, a:visited, a:active{
 		transform: rotateZ(360deg);
 	}
 }
-
-.kimdang{
-  /* width : 70px; */
-  width : 80px;
-  height : 110px;
-  background-image: url('images/mini_zoro.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.johann{
-  /* width : 70px; */
-  width : 80px;
-  height : 110px;
-  background-image: url('images/cool_picka.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hide{
-  display : none;
+@keyframes colorChange {
+	0% {
+		color: pink;
+  }
+  50% {
+		color: lime;
+	}
+	100% {
+		color: red;
+	}
 }
