@@ -16,7 +16,7 @@ $(document).ready(function() {
      * to the stage.
      */
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name'); // MakeBlinkyDancer
-    // console.log('dancerMakerFunctionName : ', dancerMakerFunctionName);
+    console.log('dancerMakerFunctionName : ', dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
     // console.log(window);
@@ -29,6 +29,7 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
   });
 });
 

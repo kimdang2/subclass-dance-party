@@ -1,6 +1,6 @@
 var MakeBouncyDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
-  // this.step(); // sets oldstep to makeBlinkyStep & replaces line 40
+  this.$node = $('<span class="bouncy"></span>');
 };
 
 MakeBouncyDancer.prototype = Object.create(MakeDancer.prototype);
