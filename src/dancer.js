@@ -6,7 +6,7 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   //console.log(this.step());
   this.step(); // sets oldstep to makeBlinkyStep & replaces line 40
-  this.setPosition(top, left);
+  this.setPosition(top, left); // ??? doesn't work when invoked in dancer.js???
 };
 
 MakeDancer.prototype = {};
