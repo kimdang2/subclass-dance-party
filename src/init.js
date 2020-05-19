@@ -43,5 +43,13 @@ $(document).ready(function() {
     $(this).addClass('hide');
     $('.fredArmy').removeClass('hide');
   });
+
+
+  $('.dancer').hover(function() {
+    console.log('hoover in!!');
+  }, function() {
+    console.log('hoover out!!');
+  });
+
 });
 

@@ -19,7 +19,7 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
-  height:32px;
+  height:40px;
   margin-top: 10px;
   background-color: #e4dfdf36;
 }
@@ -27,19 +27,26 @@ body, a:link, a:visited, a:active{
   background-color: #e4dfdf36;
   font-size: 25px;
   background: black;
+  border-radius: 8px;
   animation : colorChange 1s infinite;
 }
 
 /* styles on buttons */
 .colorButton {
-  background: black;
+  background: #504a4abf;
   color : white !important;
   padding:5px 10px;
   margin : 5px;
   border-radius: 8px;
   animation : colorChange 1s infinite;
+  text-decoration: none;
+  margin-top: 1;
 }
 
+.center {
+  padding:5px 10px;
+  float:left;
+}
 /* setting alignment on dancers */
 .lineUp{
   top : 50% !important;
@@ -90,6 +97,7 @@ body, a:link, a:visited, a:active{
 /* style on dancers */
 .dancer{
   position:absolute;
+  z-index: 2 !important;
 }
 .dancer:hover{
   transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
