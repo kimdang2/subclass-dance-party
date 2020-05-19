@@ -2,7 +2,7 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.addDancerButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name'); // MakeBlinkyDancer //MakeBouncyDancer
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name'); // MakeBlinkyDancer //MakeBouncyDancer //MakeSpinDancer
     console.log('dancerMakerFunctionName : ', dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
@@ -26,7 +26,17 @@ $(document).ready(function() {
     //   console.log(window.dancers[i]);
     // }
     $('.dancer').addClass('lineUp');
+    $('.randomizeButton').removeClass('hide');
   });
+
+  $('.randomizeButton').on('click', function(event) {
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //   window.dancers[i].lineUp();
+    //   console.log(window.dancers[i]);
+    // }
+    $('.dancer').removeClass('lineUp');
+  });
+
 
 });
 
