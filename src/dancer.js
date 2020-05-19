@@ -4,38 +4,42 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="dancer"></span>');
+  //console.log(this.step());
+  this.step(); // sets oldstep to makeBlinkyStep & replaces line 40
+  this.setPosition(top, left);
 };
 
 MakeDancer.prototype = {};
 MakeDancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  setTimeout(this.step, this.timeBetweenSteps);
+  var step = this.step.bind(this);
+  console.log(step);
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  console.log(this);
 };
-MakeDancer.prototype.setPosition = function() {
+
+
+
+MakeDancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
   //
   var styleSettings = {
-    top: this.top,
-    left: this.left
+    top: top,
+    left: left
   };
+  //console.log(styleSettings);
   this.$node.css(styleSettings);
 };
 
-
-// var makeDancer = function(top, left, timeBetweenSteps) {
-
-//   var dancer = {};
-
-//   // use jQuery to create an HTML <span> tag
-//   dancer.$node = $('<span class="dancer"></span>');
-
+// /* Line 7 invokes dancer.step() function  */
 //   dancer.step = function() {
 //     // the basic dancer doesn't do anything interesting at all on each step,
 //     // it just schedules the next step
 //     setTimeout(dancer.step, timeBetweenSteps);
 //   };
+
 //   dancer.step();
 
 //   dancer.setPosition = function(top, left) {
