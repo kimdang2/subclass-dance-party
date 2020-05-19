@@ -14,9 +14,9 @@ MakeDancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
   var step = this.step.bind(this);
-  console.log(step);
+  //console.log(step);
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
-  console.log(this);
+  //console.log(this);
 };
 
 
