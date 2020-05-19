@@ -44,6 +44,9 @@ body, a:link, a:visited, a:active{
 }
 
 .kimdang{
-  background-image: url("/images/nikita2.jpg");
-  height : 10px;
+  width : 70px;
+}
+
+.johann{
+  width : 70px;
 }
